@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preloader Example</title>
+    <link rel="stylesheet" href="css/preloader.css">
+</head>
+<body>
+    <div id="preloader"></div>
+    <h1>It is Preloader Example</h1>
+
+    <script>
+        var loader=document.getElementById("preloader");
+
+        window.addEventListener("load",function(){
+            setTimeout(function() {
+                loader.style.display = "none";
+                }, 300);
+
+        });
+    </script>
+</body>
+</html>
